@@ -1,0 +1,15 @@
+#program which returns whether it is a palindrome or not 
+
+def is_palindrome():
+    # Take number as input from user
+    n = input("Enter a number: ")
+    
+    # Compare the string to its reverse
+    if n == n[::-1]:
+        print("It is a palindrome")
+    else:
+        print("No, it is not a palindrome")
+
+# Call the function
+is_palindrome()
+
