@@ -1,0 +1,57 @@
+The solution to the "Longest Substring Without Repeating Characters" problem primarily uses the following data structure and algorithm (DSA) concepts:
+
+1. **Sliding Window Technique**: 
+    - This is the main algorithmic concept used in the solution. The idea is to maintain a "window" of characters in the string that moves rightward. The window expands or shrinks based on certain conditions.
+    - In this problem, the window (defined by the `left` and `right` pointers) expands when a new unique character is encountered and shrinks when a repeating character is found.
+    
+    
+    ########################################################
+
+        	1. **TechTarget**:
+	   - **Description**: This article explains how the sliding window protocol controls and optimizes packet flow between a sender and receiver. It provides a detailed overview of how data packets are managed and transmitted using the sliding window technique.
+	   - **URL**: [TechTarget - Sliding Window Technique](https://www.techtarget.com/searchnetworking/definition/sliding-windows)
+	
+	2. **Stack Overflow**:
+	   - **Description**: This is a discussion on Stack Overflow where users explain the sliding window technique using an example. It provides a clear understanding of the technique and how it can be applied to various algorithms.
+	   - **URL**: [Stack Overflow - What is Sliding Window Algorithm? Examples?](https://stackoverflow.com/questions/8269916/what-is-sliding-window-algorithm-examples)
+	
+	3. **GeeksforGeeks**:
+	   - **Description**: GeeksforGeeks provides a comprehensive guide on the Window Sliding Technique. It explains the concept, its prerequisites, and how to use it. The article also provides examples to illustrate the use of this technique.
+	   - **URL**: [GeeksforGeeks - Window Sliding Technique](https://www.geeksforgeeks.org/window-sliding-technique/)
+	
+	4. **LuseraTech**:
+	   - **Description**: This article provides an in-depth explanation of the sliding window technique, its advantages, disadvantages, and its application in solving problems. It also provides a specific example of solving the Leetcode problem #3 using the sliding window technique.
+	   - **URL**: [LuseraTech - Explaining the Sliding Window Technique](https://www.luseratech.com/dsa/explaining-the-sliding-window-technique/)
+	
+	5. **Level Up Coding**:
+	   - **Description**: This article provides an understanding of the sliding window technique in algorithms. It explains when and how to use the technique and provides a classic example to demonstrate its application.
+	   - **URL**: [Level Up Coding - Understanding the Sliding Window Technique in Algorithms](https://levelup.gitconnected.com/understanding-the-sliding-window-technique-in-algorithms-c6c3bf8226da)
+    ########################################################
+
+
+2. **Set (Hash Set)**:
+    - A set is a data structure that stores unique elements in no particular order. 
+    - In this solution, a set (`chars`) is used to keep track of characters in the current window (substring). It allows for constant time (`O(1)`) checks to see if a character is already in the current substring and for adding/removing characters.
+    - The set is crucial for efficiently determining whether a character has been seen before without having to scan through the entire substring.
+
+            Of course! Here are some links that provide explanations on the concept of a HashSet:
+
+1. **Stack Overflow**:
+   - **Description**: This discussion on Stack Overflow provides insights into what a HashSet is. A HashSet holds a set of objects in a way that allows you to easily and quickly determine whether an object is already in the set or not. It uses a hash-based implementation, making operations like Add, Remove, and Contains O(1).
+   - **URL**: [Stack Overflow - Define: What is a HashSet?](https://stackoverflow.com/questions/4558754/define-what-is-a-hashset)
+
+2. **GeeksforGeeks**:
+   - **Description**: This article from GeeksforGeeks provides a comprehensive guide on Java's HashSet class, which implements the Set interface and is backed by a hash table (essentially a HashMap instance). The article delves into the features, declaration, and examples of using HashSet in Java.
+   - **URL**: [GeeksforGeeks - HashSet in Java](https://www.geeksforgeeks.org/hashset-in-java/)
+
+3. **W3Schools**:
+   - **Description**: W3Schools offers a tutorial on Java's HashSet. It covers the basics of HashSet, including its declaration, adding items, checking for item existence, removing items, and iterating through a HashSet.
+   - **URL**: [W3Schools - Java HashSet](https://www.w3schools.com/java/java_hashset.asp)
+
+These links should give you a solid understanding of the concept and implementation of HashSet.
+
+3. **Two Pointers**:
+    - The `left` and `right` pointers are used to represent the start and end of the current window (substring). 
+    - The two pointers move through the string, with the `right` pointer always moving forward and the `left` pointer moving forward when a repeating character is encountered.
+
+By combining these concepts, the solution efficiently finds the longest substring without repeating characters in a given string. The sliding window ensures that each character is processed only once, leading to a linear time complexity of `O(n)`, where `n` is the length of the string.
